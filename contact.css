@@ -1,0 +1,51 @@
+.contact{
+    padding:50px;
+    text-align:center;
+}
+
+.contact-box{
+    width:500px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.2);
+}
+
+input,textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+}
+
+button{
+    background:#5D4037;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+.logo{
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.logo img{
+
+width:90px;
+
+border-radius:50%;
+
+margin-bottom:10px;
+
+}
+
+.logo h2{
+
+color:#FFD700;
+
+}

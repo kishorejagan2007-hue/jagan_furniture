@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login | Jagan Furniture</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:url("images/wood.jpg") no-repeat center center/cover;
+}
+
+.login-box{
+    width:380px;
+    background:rgba(0,0,0,0.6);
+    padding:35px;
+    border-radius:15px;
+    backdrop-filter:blur(8px);
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+    color:white;
+}
+
+.logo{
+    width:90px;
+    display:block;
+    margin:0 auto 15px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.input-box{
+    margin-bottom:15px;
+}
+
+.input-box input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#f4c542;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#d8aa20;
+}
+
+.links{
+    margin-top:20px;
+    text-align:center;
+}
+
+.links a{
+    color:#ffd54f;
+    text-decoration:none;
+}
+
+.links a:hover{
+    text-decoration:underline;
+}
+</style>
+
+</head>
+<body>
+
+<div class="login-box">
+
+<img src="images/logo.png (2).jpeg" class="logo">
+
+<h2>Login</h2>
+
+<form onsubmit="login(event)">
+
+<div class="input-box">
+<input type="email" placeholder="Email Address" required>
+</div>
+
+<div class="input-box">
+<input type="password" placeholder="Password" required>
+</div>
+<a>
+<button onclick="login()">Login</button>
+</a>
+
+
+</form>
+
+<div class="links">
+<p>Don't have an account?</p>
+<a href="signup.html">Create Account</a>
+</div>
+
+</div>
+
+
+
+
+<script>
+function onLoginSuccess() {
+    localStorage.setItem("isLoggedIn", "true");
+    window.location.href = "contact.html";
+}
+
+</script>
+
+</body>
+</html>
